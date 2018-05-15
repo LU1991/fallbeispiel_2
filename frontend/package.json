@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/LU1991/fallbeispiel_2#readme",
   "dependencies": {
-    "npm": "^6.0.1"
+    "casperjs": "^1.1.4",
+    "cypress": "^2.1.0",
+    "npm": "^6.0.1",
+    "phantomjs-prebuilt": "^2.1.16",
+    "selenium-webdriver": "^4.0.0-alpha.1"
   }
 }

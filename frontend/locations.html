@@ -1,0 +1,70 @@
+        <!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    
+        <title>Hebebühnenverleih Lift it up - Standorte</title>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Unternehmen</a></li>
+                    <li><a href="locations.html">Standorte</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <div class="container">
+                <p>
+                    Hier finden Sie eine Übersicht über unsere Standorte
+                </p>
+                <!--
+                <div class="center">
+                    <img src="germany-map.png" alt="germany-map" height="200px">
+                </div>
+                -->
+                <div class="row">
+                    <form id="searchForm">
+                        <label for="search">Standort suchen: </label>
+                        <input id="searchField" type="text" placeholder="Geben Sie einen Ort ein">
+                        <input id="searchButton" type="submit" value="Suchen">
+                    </form>
+                </div>
+
+                <div class="row">
+                    Filtern nach Größe:
+                    <input type="radio" name="sizeFilter" class="radio" id="small" value="Small">Small
+                    <input type="radio" name="sizeFilter" class="radio" id="medium" value="Medium">Medium
+                    <input type="radio" name="sizeFilter" class="radio" id="big" value="Big">Big
+                    <input type="button" value="Filter löschen" id="deselectFilter">
+                </div>
+
+                <hr class="hr">
+
+                <div id="locations"></div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>&copy; Hebebühnenverleih Lift it up 2018</p>
+                <ul>
+                    <li><a href="#">Impressum</a></li>
+                    <li><a href="#">Datenschutzerklärung</a></li>
+                </ul>
+            </div>
+        </footer>
+         <script src="Location.js"></script>
+        <script src="Locations.js"></script>
+    </body> 
+</html>

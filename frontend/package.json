@@ -4,7 +4,10 @@
   "description": "Fallbeispiel 2 für EPS",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": {
+      "cypress open": "node_modules/cypress/bin/cypress open",
+      "test": "jasmine"
+    }
   },
   "repository": {
     "type": "git",
@@ -18,7 +21,11 @@
   "homepage": "https://github.com/LU1991/fallbeispiel_2#readme",
   "dependencies": {
     "casperjs": "^1.1.4",
+    "chromedriver": "^2.38.3",
     "cypress": "^2.1.0",
+    "geckodriver": "^1.11.0",
+    "iedriver": "^3.9.2",
+    "jasmine": "^3.1.0",
     "npm": "^6.0.1",
     "phantomjs-prebuilt": "^2.1.16",
     "selenium-webdriver": "^4.0.0-alpha.1"

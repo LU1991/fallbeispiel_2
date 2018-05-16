@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -16,6 +17,7 @@ public class LocationController {
 	@Autowired
 	private LocationService locationService;
 	
+	@CrossOrigin
 	@RequestMapping(value="/locations")
 	public @ResponseBody List<Location> search(@RequestParam(name = "city", required=false, defaultValue="") String city) {
 		
